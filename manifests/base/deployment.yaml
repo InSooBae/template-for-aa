@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: tttt
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tttt
+  template:
+    metadata:
+      labels:
+        app: tttt
+    spec:
+      containers:
+        - name: tttt
+          image: cepgbaseacr.azurecr.io/82273952
+          ports:
+            - containerPort: 8080
