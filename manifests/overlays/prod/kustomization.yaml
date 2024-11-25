@@ -1,18 +1,20 @@
 configMapGenerator:
-  - files:
-      - application.yml
-    name: 82273952-configmap
+- files:
+  - application.yml
+  name: 82273952-configmap
 resources:
-  - ../../base
-  - pvc.yaml
+- ../../base
+- pvc.yaml
 patchesStrategicMerge:
-  - deployment.yaml
-  - ingress.yaml
+- deployment.yaml
+- ingress.yaml
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 namePrefix: prod-
 images:
-  - name: ceappacr.azurecr.io/82273952
-    newTag: "202411260237"
-  - name: cepgstapacr.azurecr.io/82273952
-    newTag: "202411260238"
+- name: ceappacr.azurecr.io/82273952
+  newTag: "202411260237"
+- name: ceappacr.azurecr.io/tttt
+  newTag: "202411251826"
+- name: cepgstapacr.azurecr.io/82273952
+  newTag: "202411260238"
