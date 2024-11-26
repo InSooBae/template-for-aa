@@ -15,6 +15,6 @@ images:
 - name: ceappacr.azurecr.io/82273952
   newTag: "202411260237"
 - name: ceappacr.azurecr.io/tttt
-  newTag: "202411260757"
+  newTag: "202411260831"
 - name: cepgstapacr.azurecr.io/82273952
   newTag: "202411260238"
